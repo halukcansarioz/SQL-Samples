@@ -1,85 +1,136 @@
-# 🚀 SQL Samples (SQL Örnekleri)
+# 🗄️ SQL-Samples
+### (Transact-SQL Query Examples for SQL Server)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)](#)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)](#)
+[![TSQL](https://img.shields.io/badge/T--SQL-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white)](#)
+[![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=flat&logo=microsoft-sql-server&logoColor=white)](#)
+[![Made with Learning](https://img.shields.io/badge/Made%20with-Learning-1f425f.svg)](#)
 
-Bu depo, temel ve ileri düzey veritabanı sorgularını, tablo yapılarını ve SQL (Structured Query Language) kullanılarak oluşturulmuş örnek veritabanı işlemlerini içermektedir.
+This repository contains a collection of Transact-SQL (T-SQL) queries and database operations created while learning SQL Server. It demonstrates fundamental and intermediate database concepts through practical, runnable examples.
 
-## 📚 İçindekiler
-- [Proje Hakkında](#proje-hakkında)
-- [SQL Konuları](#sql-konuları)
-- [Geliştirme Süreci](#geliştirme-süreci)
-- [Kurulum ve Kullanım](#kurulum-ve-kullanım)
-- [Katkıda Bulunma](#katkıda-bulunma)
-- [Lisans](#lisans)
-
----
-
-## 💻 Proje Hakkında
-Veritabanı yönetimi, veri manipülasyonu ve karmaşık sorgu yapılarını anlamak amacıyla oluşturulmuştur. Farklı senaryolara uygun DDL ve DML komutları, fonksiyonlar ve ilişkisel veritabanı tasarımlarını barındırır.
-
-## 🗂 SQL Konuları
-Bu depoda bulabileceğiniz temel konu başlıkları şunlardır:
-* **Temel Sorgular (CRUD İşlemleri):** SELECT, INSERT, UPDATE, DELETE
-* **Veritabanı ve Tablo İşlemleri (DDL):** CREATE, ALTER, DROP, TRUNCATE
-* **Filtreleme ve Sıralama:** WHERE, ORDER BY, GROUP BY, HAVING
-* **Birleştirmeler (Joins):** INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN
-* **Alt Sorgular (Subqueries)**
-* **Gelişmiş Yapılar:** Views, Triggers, Stored Procedures, Functions
-* **Aggregate (Kümeleme) Fonksiyonları:** COUNT, SUM, AVG, MIN, MAX
+## 📚 Table of Contents
+- [About the Project](#about-the-project)
+- [SQL Topics Covered](#sql-topics-covered)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Development Workflow](#development-workflow)
+- [Contributing](#contributing)
+- [Contact](#contact)
+- [License](#license)
 
 ---
 
-## 🛠 Geliştirme Süreci
+## About the Project
+This project was created to understand database management, data manipulation, and complex query structures. It includes DDL and DML commands, functions, and relational database designs suitable for various scenarios.
 
-Projeye yeni bir SQL örneği eklerken veya mevcut sorguları güncellerken aşağıdaki adımları takip edebilirsiniz:
+- **Developer:** Haluk Can SARIÖZ
+- **Database:** Microsoft SQL Server (T-SQL)
+- **Purpose:** Practice SQL Server query writing and database operations
+- **Total Samples:** 9 structured T-SQL query files + additional resources
 
-### 1. Forklama
-Öncelikle depoyu kendi GitHub hesabınıza fork'layın.
+---
 
-### 2. Yeni Dal (Branch) Oluşturma
-Her yeni özellik veya düzeltme için yeni bir dal oluşturmak düzeni korur. Terminalde şu komutu kullanın:
-```bash
-git checkout -b ozellik/yeni-sql-sorgusu
+## SQL Topics Covered
+The main topics you'll find in this repository are:
+
+| Category | Examples |
+|----------|----------|
+| **CRUD Operations** | SELECT, INSERT, UPDATE, DELETE |
+| **Database & Table Operations (DDL)** | CREATE, ALTER, DROP, TRUNCATE |
+| **Filtering & Sorting** | WHERE, ORDER BY, GROUP BY, HAVING |
+| **Joins** | INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN |
+| **Subqueries** | Nested SELECT statements, correlated subqueries |
+| **Advanced Structures** | Views, Triggers, Stored Procedures, Functions |
+| **Aggregate Functions** | COUNT, SUM, AVG, MIN, MAX |
+
+---
+
+## Project Structure
+```text
+SQL-Samples/
+├── SQL-Kaynaklar/           # Additional SQL resource files and references
+├── SQLQuery1.sql            # Query example 1
+├── SQLQuery2.sql            # Query example 2
+├── SQLQuery3.sql            # Query example 3
+├── SQLQuery4.sql            # Query example 4
+├── SQLQuery5.sql            # Query example 5
+├── SQLQuery6.sql            # Query example 6
+├── SQLQuery7.sql            # Query example 7
+├── SQLQuery8.sql            # Query example 8
+├── SQLQuery9.sql            # Query example 9
+├── .gitattributes           # Git configuration file
+├── LICENSE                  # MIT License
+└── README.md                # Project documentation
 ```
 
-### 3. Kodları Gönderme (Push)
-Değişikliklerinizi yaptıktan ve commit'ledikten sonra, hazırladığınız dalı GitHub'a göndermek için:
-```bash
-git push origin ozellik/yeni-sql-sorgusu
-```
-
 ---
 
-## 🚀 Kurulum ve Kullanım
+## Getting Started
 
-Projeyi yerel ortamınıza indirmek için aşağıdaki adımları izleyin:
+### Prerequisites
+- [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) (any recent version) or [Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio)
+- Alternatively: SQL Server Management Studio (SSMS), DBeaver, or DataGrip
+- Git
 
-1. Depoyu klonlayın:
+### Steps
+
+**1. Clone the repository:**
 ```bash
 git clone https://github.com/halukcansarioz/SQL-Samples.git
 ```
 
-2. Proje dizinine gidin:
+**2. Navigate to the project directory:**
 ```bash
 cd SQL-Samples
 ```
 
-3. İlgili `.sql` uzantılı dosyaları favori SQL istemcinizde (MySQL Workbench, pgAdmin, DBeaver, DataGrip vb.) açarak çalıştırabilir ve inceleyebilirsiniz.
+**3. Open any `.sql` file in your preferred SQL client** (SSMS, Azure Data Studio, DBeaver, DataGrip, etc.) and execute the queries against your SQL Server instance.
 
 ---
 
-## 🤝 Katkıda Bulunma
+## Development Workflow
+When adding a new SQL example or updating existing queries, you can follow these steps:
 
-Projeye katkı sağlamaktan çekinmeyin!
-1. Bu depoyu Fork'layın.
-2. **Branch oluşturun** (`git checkout -b feature/join-ornekleri`).
-3. Değişikliklerinizi yapın ve commit edin.
-4. **Kodlarınızı Push'layın** (`git push origin feature/join-ornekleri`).
-5. Bir Pull Request açın.
+### 1. Fork the repository
+First, fork the repository to your own GitHub account.
+
+### 2. Create a new branch
+Creating a new branch for each feature or fix keeps things organized:
+```bash
+git checkout -b feature/new-sql-query
+```
+
+### 3. Push your code
+After making and committing your changes, push the branch to GitHub:
+```bash
+git push origin feature/new-sql-query
+```
 
 ---
 
-## 📜 Lisans
-Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır. Dilediğiniz gibi kullanabilir ve geliştirebilirsiniz.
+## Contributing
+Contributions are welcome! Feel free to submit a pull request.
+
+1. **Fork** this repository.
+2. **Create a branch** (`git checkout -b feature/join-examples`).
+3. Make your changes and **commit** them.
+4. **Push your code** (`git push origin feature/join-examples`).
+5. Open a **Pull Request**.
+
+---
+
+<a name="contact"></a>
+## Contact
+**Haluk Can Sarıöz**
+- GitHub: [@halukcansarioz](https://github.com/halukcansarioz)
+- Email: [halukcansarioz19@gmail.com](mailto:halukcansarioz19@gmail.com)
+- LinkedIn: [Haluk Can Sarıöz](https://www.linkedin.com/in/halukcansarioz)
+
+---
+
+*If you find this project helpful, please ⭐ the repository!*
+
+---
+
+## License
+This project is licensed under the [MIT License](LICENSE). Feel free to use and modify it as you wish.
