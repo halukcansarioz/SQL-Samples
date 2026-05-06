@@ -58,7 +58,7 @@ Projeyi yerel ortamınıza indirmek için aşağıdaki adımları izleyin:
 
 1. Depoyu klonlayın:
 ```bash
-git clone [https://github.com/halukcansarioz/SQL-Samples.git](https://github.com/halukcansarioz/SQL-Samples.git)
+git clone https://github.com/halukcansarioz/SQL-Samples.git
 ```
 
 2. Proje dizinine gidin:
